@@ -1,0 +1,57 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.topbar{
+  position: absolute;
+  height: 80px;
+  width: 1440px;
+  background: blue;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+}
+
+.Image{
+  position: absolute;
+  left: 108px;
+  top: 24px;
+}
+
+.topbar ul{
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* bw/color-gray-100 */
+
+  color: #212429;
+
+  position: absolute;
+  width: 551px;
+  height: 16px;
+  left: 484px;
+  top: 32px;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.topbar ul li{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+}
