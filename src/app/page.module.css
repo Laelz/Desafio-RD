@@ -1,57 +1,308 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-}
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;900&family=Nunito+Sans:wght@400;800&display=swap');
 
-.topbar{
-  position: absolute;
+.topbar {
   height: 80px;
-  width: 1440px;
-  background: blue;
-  left: 0px;
-  top: 0px;
+  width: 100%;
   background: #FFFFFF;
+  display: flex;
+  border-bottom: 2px solid #CFD3D8;
 }
 
-.Image{
-  position: absolute;
-  left: 108px;
-  top: 24px;
+.logo {
+  /* position: absolute; */
+  margin: auto 24px 20px 108px;
+  /* left: 108px; */
 }
 
-.topbar ul{
+.topbar div {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  top: 45px;
+  gap: 16px;
+  margin: 20px 60px 20px auto;
+
+}
+
+.topbar div a {
+  align-items: center;
+  display: flex;
+}
+
+.topbar nav {
+  margin: 0 auto;
+}
+
+.topbar nav ul {
+  display: flex;
+  color: #212429;
+}
+
+.topbar nav ul li {
   list-style: none;
+  font-weight: 700;
+  font-size: 1.6rem;
+  justify-content: space-between;
+
+  text-decoration: none;
+  padding: 3.0rem;
+}
+
+.banner {
+  width: 100%;
+  display: block;
+  /* bw/color-gray-10 */
+
+  background: #F1F3F5;
+  clip-path: polygon(50% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
+  /* margin: 0; */
+}
+
+.topBanner {
+  width: 100%;
+  height: 3vh;
+  left: 0px;
+  /* bw/color-gray-10 */
+  /* clip-path: polygon(50% 0, 100% 75%, 100% 100%, 0 100%, 0 0); */
+  /* margin: 0; */
+}
+
+.topBanner h2 {
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 5.6rem;
+  line-height: 4.6rem;
+  width: 50%;
+  padding: 10vh 5vw 3vh 5vw;
+
+}
+
+.topBanner p {
+  font-size: 2.0rem;
+  line-height: 150%;
+  color: #212429;
+  width: 50%;
+  padding: 0 5vw;
+}
+
+.midBanner {
+  background: #0B485B;
+  height: 50vh;
+  margin-top: 50vh;
+  width: 100%;
+  padding: 10vh 55vw 3vh 5vw;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 30%);
+}
+
+.midBanner h3 {
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+
+.midBanner p {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.midBanner p + p{
+margin-top: 3vh;
+}
+
+.bottomBanner {
+  margin: 20vh 5vw 3vh 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.bottomBanner div {
+  width: 30vw;
+  margin: 10vh 0 3vh 5vw;
+}
+
+.bottomBanner div h3 {
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 110%;
+  /* or 35px */
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  /* bw/color-gray-100 */
-
-  color: #212429;
-
-  position: absolute;
-  width: 551px;
-  height: 16px;
-  left: 484px;
-  top: 32px;
-
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
-.topbar ul li{
+.bottomBanner div p {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.bottomBanner div ul li {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 100%;
-  /* identical to box height, or 16px */
+  line-height: 150%;
+  /* or 24px */
+
+
+  /* bw/color-gray-100 */
+
+  color: #212429;
+}
+
+
+
+
+
+.buttonSecondaryEnabled {
+  text-decoration: none;
+  justify-content: center;
+  display: block;
+  align-items: center;
+  padding: auto;
+
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 140%;
+
+  border: 3px solid #212429;
+  box-shadow: 0 4px 0 0 #212429;
+  border-radius: 0px 0px 5px 5px;
+
+  width: 7vw;
+  height: 36px;
+  color: #212429;
+  /* brand/rd-station/color-primary-60 */
+
+  background: #FFF;
+}
+
+
+.buttonPrimaryEnabled {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw 1vh;
+  gap: 0.4vw;
+
+  font-weight: 800;
+  font-size: 1.4rem;
+
+  box-shadow: 0 4px 0 0 #212429;
+  border-radius: 0px 0px 5px 5px;
+
+  width: 7vw;
+  height: 36px;
+  color: #212429;
+  /* brand/rd-station/color-primary-60 */
+
+  background: #19C1CE;
+}
+
+
+.form {
+  position: absolute;
+  width: 30vw;
+  left: 60vw;
+  top: 120px;
+
+  background: #FFFFFF;
+
+  box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
+  border-radius: 2px;
+}
+
+.form form div h4 {
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 110%;
+  /* or 26px */
+
+  text-align: center;
+
+  /* bw/color-gray-100 */
+  padding: 4vw 4vh;
+
+  color: #212429;
+}
+
+.form form input {
+  border: 2px solid #000000;
+  box-shadow: inset 6px 6px 0px #EEFBFB;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  padding-left: 3%;
+}
+
+.form form input::placeholder {
+  color: black;
+  opacity: 0.3;
+}
+
+
+
+.form form label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 24px;
+}
+
+.formGroup {
+  margin: 5% 10%;
+}
+
+.formGroup button {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 150%;
+  width: 100%;
+  /* highlight/color-highlight-60 */
+
+  background: #F2BF4E;
+}
+
+
+.cards {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+  height: 50vh;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.text--medium {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  color: #ecf0f1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
