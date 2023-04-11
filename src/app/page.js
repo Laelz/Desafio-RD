@@ -73,7 +73,7 @@ export default function Home() {
           <p>Estaremos com você do planejamento até a prática!</p>
         </div>
         <div className={styles.bottomBanner}>
-          <Image src={ImgWoman} width={600} height={600} />
+          <Image src={ImgWoman} />
           <div>
             <h3>Resultados previsíveis
               e mais clientes para sua empresa</h3>
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </div>
       <section className={styles.form}>
-        <form>
+        <form >
           <div>
             <h4>Comece seus 10 dias de teste grátis do RD Station Marketing!</h4>
           </div>
@@ -144,11 +144,11 @@ export default function Home() {
             />
           </div>
           <div className={styles.formGroup}>
-            <label name="siteTrue">Meu site é</label>
+            {/* <label name="siteTrue">Meu site é</label>
             <input
               name='siteMark'
               type="radio"
-            />
+            /> */}
             <label name="site">Qual o site da sua empresa?</label>
             <input
               name='site'
@@ -156,11 +156,11 @@ export default function Home() {
               type="text"
               required
             />
-            <label name="siteFalse">Ainda não tenho site</label>
+            {/* <label name="siteFalse">Ainda não tenho site</label>
             <input
               name='siteMark'
               type="radio"
-            />
+            /> */}
           </div>
 
           <div className={styles.formGroup}>
