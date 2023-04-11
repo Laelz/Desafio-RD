@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;900&family=Nunito+Sans:wght@400;800&display=swap');
 
 .topbar {
-  height: 80px;
+  height: 8vh;
   width: 100%;
   background: #FFFFFF;
   display: flex;
@@ -11,7 +11,8 @@
 .logo {
   /* position: absolute; */
   margin: auto 24px 20px 108px;
-  /* left: 108px; */
+  height: 50%;
+  width: 15%;
 }
 
 .topbar div {
@@ -42,10 +43,8 @@
   list-style: none;
   font-weight: 700;
   font-size: 1.6rem;
-  justify-content: space-between;
-
   text-decoration: none;
-  padding: 3.0rem;
+  padding: 2.5rem;
 }
 
 .banner {
@@ -113,8 +112,8 @@
   color: #FFFFFF;
 }
 
-.midBanner p + p{
-margin-top: 3vh;
+.midBanner p+p {
+  margin-top: 3vh;
 }
 
 .bottomBanner {
@@ -284,13 +283,12 @@ margin-top: 3vh;
 
 
 .cards {
-  width: 90%;
-  max-width: 980px;
+  width: 80%;
   margin: auto;
   height: 50vh;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
 }
 
@@ -305,4 +303,74 @@ margin-top: 3vh;
   display: flex;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cta {
+  margin: 10vh 0 10vh 0;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  background-color: #0B485B;
+  padding: 10vw 30vh 30vh 25vw;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  flex-direction: row;
+
+}
+
+.cta h2 {
+  color: #FFFFFF;
+  ;
+}
+
+.cta p{
+  color: #FFFFFF;
+}
+
+.cta a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw 1vh;
+  gap: 0.4vw;
+
+
+  box-shadow: 0 4px 0 0 #212429;
+  border-radius: 0px 0px 5px 5px;
+
+  height: 5px;
+  color: #212429;
+  /* brand/rd-station/color-primary-60 */
+
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 150%;
+  width: 15vw;
+  /* highlight/color-highlight-60 */
+
+  background: #F2BF4E;
+
+
+}
+
+.integrations {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer footer {
+  display: flex;
+  justify-content: space-between;
+  background: #19C1CE;
+  width: 100%;
+  top: 100%;
+  height: 20vh;
 }

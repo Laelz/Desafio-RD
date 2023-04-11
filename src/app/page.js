@@ -1,19 +1,53 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-import logo from '../assets/rdlogodefault.png'
-import Link from 'next/link'
+
+// import { useState } from 'react';
+
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import styles from './page.module.css';
+import logo from '../assets/logo.svg';
+import logoInvert from '../assets/logoinvert.svg';
+import Link from 'next/link';
 import EastIcon from '../assets/rightarrowLeft.svg';
 import ImgWoman from '../assets/imgwoman.png';
+import IconGraphic from '../assets/icongraphic.svg';
+import IconGlobal from '../assets/iconglobal.svg';
+import IconGraphicPizza from '../assets/icongraphicpizza.svg';
+import IconOutFone from '../assets/iconoutfone.svg';
+import IconThink from '../assets/iconthink.svg';
+import IconStar from '../assets/iconstar.svg';
+import IconFacebook from '../assets/facebook.svg';
+import IconFacebookLinks from '../assets/facebookLinks.svg';
+import IconLinkedinLinks from '../assets/linkedinLinks.svg';
+import IconLinkedin from '../assets/linkedin.svg';
+import IconWordpress from '../assets/wordpress.svg';
+import IconShopify from '../assets/shopify.svg';
+import IconGoogle from '../assets/google.svg';
+import IconInstagram from '../assets/Instagram.svg';
+import IconPagSeguro from '../assets/pagseguro.svg';
+import IconSalesForce from '../assets/salesforce.svg';
+import IconTwitter from '../assets/twitter.svg';
+import IconYoutube from '../assets/youtube.svg';
+import IconZapier from '../assets/zapier.svg';
+import IconRD from '../assets/symbolRD.svg';
+import IconHotmart from '../assets/hotmart.svg';
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
+  //   const data = {
+  //     first: event.target.first.value,
+  //     last: event.target.last.value,
+  //   }
+  // }
+
   return (
     <main className={styles.main}>
       <header className={styles.topbar}>
-        <Image className={styles.logo} src={logo} width={174} height={32} />
+        <Image className={styles.logo} src={logo} />
         <nav>
           <ul>
             <li>Menu 1</li>
@@ -145,63 +179,149 @@ export default function Home() {
           </div>
         </form>
       </section>
-      <div className={styles.cards}>
-        <div className={styles.card}>
-          <div className={styles.image}>
-          </div>
-          <div className={styles.content}>
-            <p >
-              Formulário Animado com JS puro e CSS Animation | Mayk Brito
-            </p>
-            <div>
-              <p>57 Min</p>
-              <p>Free</p>
-            </div>
-          </div>
-        </div>
 
-        <div className={styles.card}>
-          <div className={styles.image}>
-          </div>
-          <div className={styles.content}>
-            <p >
-              Formulário Animado com JS puro e CSS Animation | Mayk Brito
-            </p>
-            <div>
-              <p>57 Min</p>
-              <p>Free</p>
-            </div>
-          </div>
-        </div>
+      <section >
+        <h2>
+        </h2>
+        <div className={styles.cards}>
 
-        <div className={styles.card}>
-          <div className={styles.image}>
-          </div>
-          <div className={styles.content}>
-            <p >
-              Formulário Animado com JS puro e CSS Animation | Mayk Brito
-            </p>
-            <div>
-              <p>57 Min</p>
-              <p>Free</p>
+          <div className={styles.card}>
+            <div className={styles.image}>
+              <Image className={styles.iconGrid} src={IconGraphic} width={32} height={32} />
+            </div>
+            <div className={styles.content}>
+              <p >
+                Torne sua operação de Marketing Digital mais produtiva
+              </p>
+              <div>
+                <p>Chega de usar várias ferramentas separadas e perder as informações no caminho! Somos o que chamam de ferramenta tudo-em-um: reunimos os principais recursos de Marketing Digital em um só lugar para sua operação ser mais eficaz.</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className={styles.card}>
-          <div className={styles.image}>
+          <div className={styles.card}>
+            <div className={styles.image}>
+              <Image className={styles.iconGrid} src={IconOutFone} width={32} height={32} />
+            </div>
+            <div className={styles.content}>
+              <p >
+                Crie facilmente campanhas que funcionam
+              </p>
+              <div>
+                <p>É fácil usar o RD Station Marketing, porque suas funcionalidades são simples, mas poderosas, e contam com dezenas de modelos — como de Landing Pages, Pop-ups, emails — para diversas ocasiões e segmentos que você pode personalizar de acordo com a sua campanha.</p>
+              </div>
+            </div>
           </div>
-          <div className={styles.content}>
-            <p >
-              Formulário Animado com JS puro e CSS Animation | Mayk Brito
-            </p>
-            <div>
-              <p>57 Min</p>
-              <p>Free</p>
+
+          <div className={styles.card}>
+            <div className={styles.image}>
+              <Image className={styles.iconGrid} src={IconThink} width={32} height={32} />
+            </div>
+            <div className={styles.content}>
+              <p >
+                Construa jornadas personalizadas e gere vendas em escala
+              </p>
+              <div>
+                <p>Envie a mensagem certa na hora certa e construa jornadas personalizadas que geram até 5x mais conversões e guiam Leads até a compra. Automatize também suas tarefas e aumente a produtividade de Marketing e Vendas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.image}>
+              <Image className={styles.iconGrid} src={IconStar} width={32} height={32} />
+            </div>
+            <div className={styles.content}>
+              <p >
+                Encontre automaticamente as melhores oportunidades
+              </p>
+              <div>
+                <p>Conheça melhor seu público, de acordo com as informações capturadas nas suas páginas e formulários. Defina critérios para identificar automaticamente Leads com maior potencial de compra e envie para o comercial oportunidades qualificadas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.image}>
+              <Image className={styles.iconGrid} src={IconGraphicPizza} width={32} height={32} />
+            </div>
+            <div className={styles.content}>
+              <p >
+                Saia da incerteza e comprove resultados
+              </p>
+              <div>
+                <p>Ao invés de fazer uma série de ações isoladas, sem saber qual funciona, junte as informações de todos os seus contatos e suas ações em diferentes canais com recursos de análise para provar que Marketing Digital traz mais vendas e clientes.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.card}>
+            <div className={styles.image}>
+              <Image className={styles.iconGrid} src={IconGlobal} width={32} height={32} />
+            </div>
+            <div className={styles.content}>
+              <p >
+                Suporte ágil e na sua língua
+              </p>
+              <div>
+                <p>Nosso time de suporte técnico está disponível quando você precisar, com uma taxa de satisfação de 97% entre nossos clientes e um tempo médio de resolução de 6 horas. E o melhor: tudo isso em português.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section className={styles.cta}>
+        <h2>Por que mais de 25.000 empresas escolheram o RD Station?</h2>
+        <p>Combinamos nossos produtos de Marketing e Vendas com pessoas que se importam com seus resultados e um ecossistema que apoia o seu negócio do planejamento à prática.</p>
+        <Link
+          href={'https://app.rdstation.com.br/signup'}
+        >
+          CRIAR MINHA CONTA
+        </Link>
+      </section>
+      <section className={styles.demo}>
+        <div>
+          <h3>Entenda melhor como o RD Station Marketing funciona na prática</h3>
+          <button>ASSISTIR A DEMONSTRAÇÃO</button>
+        </div>
+        <iframe src='https://www.youtube.com/embed/lGCesaaLi4s' title="W3Schools Free Online Web Tutorials"></iframe>
+      </section>
+      <section className={styles.integrations}>
+        <div>
+          <h2>Torne sua operação de Marketing ainda mais poderosa</h2>
+          <p>O RD Station Marketing se conecta as principais ferramentas nacionais e internacionais </p>
+          <Link
+            href={'https://app.rdstation.com.br/signup'}
+          >
+            CRIAR CONTA GRATUITA
+          </Link>
+        </div>
+        <div>
+          <Image className={styles.iconGrid} src={IconRD} />
+          <Image className={styles.iconGrid} src={IconSalesForce} />
+          <Image className={styles.iconGrid} src={IconGoogle} />
+          <Image className={styles.iconGrid} src={IconFacebook} />
+          <Image className={styles.iconGrid} src={IconLinkedin} />
+          <Image className={styles.iconGrid} src={IconWordpress} />
+          <Image className={styles.iconGrid} src={IconHotmart} />
+          <Image className={styles.iconGrid} src={IconPagSeguro} />
+          <Image className={styles.iconGrid} src={IconShopify} />
+          <Image className={styles.iconGrid} src={IconZapier} />
+
+        </div>
+      </section>
+      <section className={styles.footer}>
+        <footer>
+          <Image className={styles.iconGrid} src={logoInvert} />
+          <div>
+            <Image className={styles.iconGrid} src={IconTwitter} />
+            <Image className={styles.iconGrid} src={IconFacebookLinks} />
+            <Image className={styles.iconGrid} src={IconLinkedinLinks} />
+            <Image className={styles.iconGrid} src={IconInstagram} />
+            <Image className={styles.iconGrid} src={IconYoutube} />
+          </div>
+        </footer>
+      </section>
     </main>
   )
 }
