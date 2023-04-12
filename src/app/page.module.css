@@ -207,7 +207,6 @@
   box-shadow: 0 4px 0 0 #212429;
   border-radius: 0px 0px 5px 5px;
 
-  width: 7vw;
   height: 36px;
   color: #212429;
   /* brand/rd-station/color-primary-60 */
@@ -299,7 +298,7 @@
   padding: 4%;
 }
 
-.image{
+.image {
   background-color: #f0f5fa;
   clip-path: circle(50% at 50% 50%);
   padding: 2%;
@@ -326,12 +325,12 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  
+
   display: flex;
   align-items: center;
-  
+
   /* bw/color-gray-100 */
-  
+
   color: #212429;
 }
 
@@ -356,7 +355,7 @@
 
 .cta p {
   color: #FFFFFF;
-  margin-bottom:2vh;
+  margin-bottom: 2vh;
 }
 
 .cta a {
@@ -379,19 +378,85 @@
 
 }
 
-.integrations {
-  width: 100%;
-  height: 20vh;
+.demo {
+  height: 50vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
 
+.demo iframe {
+  position: absolute;
+  right: 15%;
+  width: 45vw;
+  height: 25vw;
+}
+
+.demo div {
+  width: 90%;
+  height: 30vh;
+  padding: 10vh 55vw 10vh 5vw;
+  align-items: center;
+  background: #F1F3F5;
+}
+
+.demo div h3 {
+  font-family: 'Darker Grotesque';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 110%;
+
+  margin-bottom: 5%;
+
+  color: #212429;
+}
+
+.integrations {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  padding: 5%;
+  gap: 5%;
+}
+
+.conta {
+  padding: 2% 0 30% 0;
+  width: 40%;
+  column-gap: 5%;
+
+}
+
+.gridIcon {
+  /* width: 60%; */
+}
+
+.gridIcon div {
+  /* width: 60%; */
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  gap: 10%;
+}
+
+.gridIcon div div {
+  /* width: 60%; */
+  display: block;
+}
+
+.footer {
+  width: 100%;
+  top: 100%;
 }
 
 .footer footer {
   display: flex;
   justify-content: space-between;
   background: #19C1CE;
-  width: 100%;
-  top: 100%;
+  padding: 4%;
   height: 20vh;
+}
+
+.footer footer div {
+  justify-content: space-between ,;
 }

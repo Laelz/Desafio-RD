@@ -187,7 +187,7 @@ export default function Home() {
 
           <div className={styles.card}>
             <div className={styles.image}>
-              <Image className={styles.iconGrid} src={IconGraphic} width={32} height={32} />
+              <Image src={IconGraphic} width={32} height={32} />
             </div>
             <div className={styles.content}>
               <p >
@@ -201,7 +201,7 @@ export default function Home() {
 
           <div className={styles.card}>
             <div className={styles.image}>
-              <Image className={styles.iconGrid} src={IconOutFone} width={32} height={32} />
+              <Image src={IconOutFone} width={32} height={32} />
             </div>
             <div className={styles.content}>
               <p >
@@ -215,7 +215,7 @@ export default function Home() {
 
           <div className={styles.card}>
             <div className={styles.image}>
-              <Image className={styles.iconGrid} src={IconThink} width={32} height={32} />
+              <Image src={IconThink} width={32} height={32} />
             </div>
             <div className={styles.content}>
               <p >
@@ -229,7 +229,7 @@ export default function Home() {
 
           <div className={styles.card}>
             <div className={styles.image}>
-              <Image className={styles.iconGrid} src={IconStar} width={32} height={32} />
+              <Image src={IconStar} width={32} height={32} />
             </div>
             <div className={styles.content}>
               <p >
@@ -243,7 +243,7 @@ export default function Home() {
 
           <div className={styles.card}>
             <div className={styles.image}>
-              <Image className={styles.iconGrid} src={IconGraphicPizza} width={32} height={32} />
+              <Image src={IconGraphicPizza} width={32} height={32} />
             </div>
             <div className={styles.content}>
               <p >
@@ -257,7 +257,7 @@ export default function Home() {
 
           <div className={styles.card}>
             <div className={styles.image}>
-              <Image className={styles.iconGrid} src={IconGlobal} width={32} height={32} />
+              <Image src={IconGlobal} width={32} height={32} />
             </div>
             <div className={styles.content}>
               <p >
@@ -287,38 +287,75 @@ export default function Home() {
         <iframe src='https://www.youtube.com/embed/lGCesaaLi4s' title="W3Schools Free Online Web Tutorials"></iframe>
       </section>
       <section className={styles.integrations}>
-        <div>
+        <div className={styles.conta}>
           <h2>Torne sua operação de Marketing ainda mais poderosa</h2>
           <p>O RD Station Marketing se conecta as principais ferramentas nacionais e internacionais </p>
           <Link
             href={'https://app.rdstation.com.br/signup'}
+            className={styles.buttonPrimaryEnabled}
           >
             CRIAR CONTA GRATUITA
           </Link>
         </div>
-        <div>
-          <Image className={styles.iconGrid} src={IconRD} />
-          <Image className={styles.iconGrid} src={IconSalesForce} />
-          <Image className={styles.iconGrid} src={IconGoogle} />
-          <Image className={styles.iconGrid} src={IconFacebook} />
-          <Image className={styles.iconGrid} src={IconLinkedin} />
-          <Image className={styles.iconGrid} src={IconWordpress} />
-          <Image className={styles.iconGrid} src={IconHotmart} />
-          <Image className={styles.iconGrid} src={IconPagSeguro} />
-          <Image className={styles.iconGrid} src={IconShopify} />
-          <Image className={styles.iconGrid} src={IconZapier} />
+        <div className={styles.gridIcon}>
+          <div>
+            <div>
+              <Image src={IconRD} />
+              <p> RD Station CRM</p>
+            </div>
+            <div>
+              <Image src={IconSalesForce} />
+              <p>SalesForce</p>
+            </div>
+            <div>
+              <Image src={IconGoogle} />
+              <p>Google</p>
+            </div>
+            <div>
+              <Image src={IconFacebook} />
+              <p>Facebook</p>
+            </div>
+            <div>
+              <Image src={IconLinkedin} />
+              <p>Linkedin</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <Image src={IconWordpress} />
+              <p>Wordpress</p>
+            </div>
+            <div>
+              <Image src={IconHotmart} />
+              <p>Hotmart</p>
+            </div>
+            <div>
+              <Image src={IconPagSeguro} />
+              <p>PagSeguro</p>
+            </div>
+            <div>
+              <Image src={IconShopify} />
+              <p>Shopify</p>
+            </div>
+            <div>
+              <Image src={IconZapier} />
+              <p>Zapier</p>
+            </div>
+          </div>
+
+
 
         </div>
       </section>
       <section className={styles.footer}>
         <footer>
-          <Image className={styles.iconGrid} src={logoInvert} />
+          <Image src={logoInvert} />
           <div>
-            <Image className={styles.iconGrid} src={IconTwitter} />
-            <Image className={styles.iconGrid} src={IconFacebookLinks} />
-            <Image className={styles.iconGrid} src={IconLinkedinLinks} />
-            <Image className={styles.iconGrid} src={IconInstagram} />
-            <Image className={styles.iconGrid} src={IconYoutube} />
+            <Image src={IconTwitter} />
+            <Image src={IconFacebookLinks} />
+            <Image src={IconLinkedinLinks} />
+            <Image src={IconInstagram} />
+            <Image src={IconYoutube} />
           </div>
         </footer>
       </section>
